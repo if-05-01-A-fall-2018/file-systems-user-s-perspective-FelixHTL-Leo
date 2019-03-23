@@ -44,12 +44,12 @@ int main(int argc, char const *argv[]) {
   printf("------------------- %s ------------------------\n",argv[1]);
   printFileType();
   printAccesPriviliges();
-  printf("inode-Number \t\t: %d\n", attributes.st_ino);
-  printf("Device number \t\t: dev = %d rdev = %d\n",attributes.st_rdev,attributes.st_dev );
-  printf("Links count \t\t: %d\n", attributes.st_nlink);
-  printf("UID \t\t\t: %d\n",attributes.st_uid );
-  printf("GID \t\t\t: %d\n", attributes.st_gid);
-  printf("File size \t\t: %d Bytes\n", attributes.st_size);
+  printf("inode-Number \t\t: %d\n", atb.st_ino);
+  printf("Device number \t\t: dev = %d rdev = %d\n",atb.st_rdev,atb.st_dev );
+  printf("Links count \t\t: %d\n", atb.st_nlink);
+  printf("UID \t\t\t: %d\n",atb.st_uid );
+  printf("GID \t\t\t: %d\n", atb.st_gid);
+  printf("File size \t\t: %d Bytes\n", atb.st_size);
   close(fd);
   return 0;
 }
